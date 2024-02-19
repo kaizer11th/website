@@ -24,3 +24,79 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San's FTP</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #add8e6; /* Light blue background color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333; /* Dark text color */
+        }
+
+        #container {
+            background-color: #ffffff; /* White background color */
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #3498db; /* Blue heading color */
+        }
+
+        p {
+            color: #777; /* Lighter text color */
+            margin-bottom: 20px;
+        }
+
+        input[type="file"] {
+            margin-top: 20px;
+            background-color: #3498db; /* Blue background color for file input */
+            color: #ffffff; /* White text color for file input */
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        button {
+            background-color: #2ecc71; /* Green button color */
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #27ae60; /* Darker green color on hover */
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>FTP</h1>
+        <p>Select a file to upload and share with others.</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" id="file" accept=".txt, .pdf, .doc, .docx, .png, .jpg, .jpeg">
+            <button type="submit">Upload File</button>
+        </form>
+    </div>
+</body>
+</html>
